@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<div class="box">
+  {% if registered %}
+  <h2>Thanks for Registration</h2>
+  {% else %}
+  <h5 class="card-header">Register hear!</h5>
+  <div class="container">
+    <form class="form-group" enctype="multipart/form-data"  method="post">
+      {% csrf_token %}
+
+      {{profile_form.employee_name.errors}}
+      <label for="{{profile_form.employee_name.id_for_label}}"> Name:</label>
+      {{profile_form.employee_name}}
+
+      {{user_form.username.errors}}
+      <label for="{{user_form.username.id_for_label}}">Username:</label>
+      {{user_form.username}}
+
+      {{user_form.email.errors}}
+      <label for="{{user_form.email.id_for_label}}">Email:</label>
+      {{user_form.email}}
+
+      {{user_form.password.errors}}
+      <label for="{{user_form.password.id_for_label}}">Password:</label>
+      {{user_form.password}}
+
+      {{profile_form.department.errors}}
+      <label for="{{profile_form.department.id_for_label}}">Department:</label>
+      {{profile_form.department}}
+
+
+      {{profile_form.adderss.errors}}
+      <label for="{{profile_form.address.id_for_label}}">Address:</label>
+      {{profile_form.address}}
+
+      {{profile_form.age.errors}}
+      <label for="{{profile_form.age.id_for_label}}">age:</label>
+      {{profile_form.age}}
+
+      {{profile_form.portfolio_site.errors}}
+      <label for="{{profile_form.portfolio_site.id_for_label}}">Portfolio Site:</label>
+      {{profile_form.portfolio_site}}
+
+      {{profile_form.profile_pic.errors}}
+      <label for="{{profile_form.profile_pic.id_for_label}}">Profile Pic:</label>
+      {{profile_form.profile_pic}}
+
+      <br><br>
+      <input type="submit" class="btn btn-primary"name="" value="Register">
+    </form>
+  </div>
+  <div class="card-footer text-muted">
+    &copy;Anand Gautam
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}
