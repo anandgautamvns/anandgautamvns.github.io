@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lormeh Hotel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      function countChar(val) {
+        var len = val.value.length;
+        if (len >= 500) {
+          val.value = val.value.substring(0, 500);
+        } else {
+          var x = len;
+          $('#charNum').text(x+'/'+500);
+        }
+      };
+    </script>
+
+  </head>
+
+    <body style="background:#000;">
+
+
+
+<!--Navbar1 start-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark nav_top" role="navigation">
+            <a class="navbar-brand" href="/"><h3>LORMEH HOTEL</h3></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav header ">
+            <a class="nav-item nav-link active" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="room.html">Room</a>
+            <a class="nav-item nav-link active" href="about.html">About</a>
+            <a class="nav-item nav-link active" href="gallery.html">Gallery</a>
+            <a class="nav-item nav-link active" href="blog.html">Blogs</a>
+            <a class="nav-item nav-link active" href="">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+
+<!--googlemap-->
+
+<div class="container " style="margin-top:20px;">
+
+    <div id="map" style="width:100%;height:500px;"></div>
+        <script>
+        function myMap() {
+          var mapCanvas = document.getElementById("map");
+          var mapOptions = {
+            center: new google.maps.LatLng(28.45, 77.07), zoom: 4
+          };
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtPsE7YbSRuY4iEiYrZx-HCFjj3t62GcI&callback=myMap"></script>
+        <address style="color:#fff;">Sector-44, Gurgaon,
+          Haryana, India</address>
+<!--googlemap end-->
+
+      <div class="contact_form">
+          <center><h3><strong>CONTACT FORM</strong></h3></center><br>
+            <form  action="" method="post">
+              <div class="form-group">
+                <label for="labelgroup">First Name:-</label>
+                <input type="text" class="form-control"name="labelgroup" placeholder="First Name" required>
+              </div>
+              <div class="form-group">
+                <label for="labelgroup">Last Name:-</label>
+                <input type="text" class="form-control"name="labelgroup" placeholder="Last Name" required><br>
+              </div>
+              <div class="form-group">
+                <label for="labelgroup">Contact Number:-</label>
+                <input type="number" class="form-control"name="labelgroup" placeholder="contact" required><br>
+              </div>
+              <div class="form-group">
+                <label for="labelgroup">Email:-</label>
+                <input type="email" class="form-control"name="labelgroup" placeholder="Email" required><br>
+              </div>
+              <div class="form-group">
+                <label for="labelgroup">Message:-</label>
+                <textarea id="field" rows="4" cols="20" class="form-control"name="labelgroup" onkeyup="countChar(this)"></textarea>
+                <div id="charNum">0/500</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+      </div>
+
+</div>
+
+
+
+
+<!--footer start-->
+<footer>
+  <div class="foot_front">
+    Partner With Us&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Corporates&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Holidays Packages&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Travel Agent
+  </div>
+  <div class="foot_mid">
+    <div class="row">
+      <div class="col-sm-4 col-xs-4">
+        <h3>INDIAN HOTELS COMPANY</h3>
+        <p>ABOUT IHC</p>
+        <p>INVESTORS</p>
+        <p>HOTEL DEVELOPERS</p>
+        <p>HOTEL SERVICES</p>
+      </div>
+      <div class="col-sm-4 col-xs-4">
+        <h3>OUR BRANDS</h3>
+        <p>TAJ</p>
+        <p>THE GATEWAY</p>
+        <p>OUR GUEST</p>
+
+      </div>
+      <div class="col-sm-4 col-xs-4">
+        <h3>CONTACT DETAILS</h3>
+        <p>CAREERS</p>
+        <p>PRIVACY POLICY</p>
+        <p>RECPTIONS</p>
+        <p>TERMS OF USE</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot_center">
+    <h3>OTHERS BRANCHES</h3>
+    Shri Nagar | Shimal | Chanighad | New Delhi | Jaipur | Noida | Lucknow | Varanasi | Patna | Kalkata | Guwahati | Bhopal | Ahamdabad | Mumbai | Nagpur | Hydarabad | Banglore | Chennai
+  </div>
+  <div class="foot_bottom">
+  <div class="row">
+    <div class="col-sm-4 col-xs-4"><br>
+      <a href="https://www.facebook.com"> <img class="logo" src="images/facebook.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://twitter.com"> <img class="logo" src="images/twitter.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.linkedin.com"> <img class="logo" src="images/linkedin.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.pinterest.com"> <img class="logo" src="images/pinterest.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://plus.google.com"> <img class="logo" src="images/google-plus.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.instagram.com"> <img class="logo" src="images/instagram.png"></a>
+    </div>
+
+  <div class="col-sm-4 col-xs-4">
+    <h3>LORMEH</h3>
+    <p>Hotel</p>
+
+  </div>
+  <div class="col-sm-4 col-xs-4">
+    <br>
+    <p>All copy Resversed &copy;2018;</p>
+  </div>
+  </div>
+  </div>
+
+</footer>
+    </body>
+</html>

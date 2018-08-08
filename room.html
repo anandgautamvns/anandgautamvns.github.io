@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lormeh Hotel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+    <body>
+
+<!--Navbar1 start-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark nav_top" role="navigation">
+            <a class="navbar-brand" href=""><h3>LORMEH HOTEL</h3></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+          <div class="navbar-nav header ">
+            <a class="nav-item nav-link active" href="index.html">Home</a>
+            <a class="nav-item nav-link active" href="">Room</a>
+            <a class="nav-item nav-link active" href="about.html">About</a>
+            <a class="nav-item nav-link active" href="gallery.html">Gallery</a>
+            <a class="nav-item nav-link active" href="blog.html">Blogs</a>
+            <a class="nav-item nav-link active" href="contact.html">Contact</a>
+          </div>
+        </div>
+
+      </nav>
+
+
+      <div class="container" style="padding-top:10px; padding-bottom:20px;">
+        <center><h1 style="color:#fff;">Our Room Kind</h1></center>
+        <center><p style="color:#fff;">&lt;Views All Rooms&gt;</p></center>
+        <div class="row">
+          <div class="col-sm-3">
+            <form class="form-group" action="" method="post">
+              <div class="form-group">
+                <label for="labelgroup" style="color:#fff;">Check In:-</label>
+                <input type="date" class="form-control" style="background-color: #007BFF; color:white;"name="labelgroup" >
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-3">
+            <form class="form-group" action="" method="post">
+              <div class="form-group">
+                <label for="labelgroup" style="color:#fff;">Check out:-</label>
+                <input type="date" class="form-control" style="background-color: #007BFF;; color:white;"name="labelgroup" >
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-3"><br>
+            <div class="card">
+              <div class="d-flex">
+                <div class="btn-group" style="width:100%;">
+                  <button type="button"  class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
+                    Person</button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                    <a class="dropdown-item" href="#">1 Adult</a>
+                    <a class="dropdown-item" href="#">2 Adult</a>
+                    <a class="dropdown-item" href="#">Family</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col-sm-3"><br>
+            <div class="card">
+              <a href="#details" data-toggle="modal" style="color:white;"><button type="button" class="btn btn-primary" name="button">Fill Details</button></a>
+            </div>
+          </div>
+          <!--Start of Popupbox SignUP-->
+            <div class="modal fade" id="details" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="model-header">
+                    <center><h3>Fill Customer Details</h3></center>
+                    <div class="modal-body">
+                         <div class="col-md-12 col-md-offset-0">
+                          <form action="#" name="details">
+
+                        <div class="form-group">
+                          <label for="name">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                        <label for="gender">Select Gender</label>
+                        <select class="form-control" id="gender">
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>
+                        </div>
+
+                      <div class="form-group">
+                        <label for="ID">Select ID</label>
+                        <select class="form-control" id="ID">
+                          <option value="">Adhaar Card</option>
+                          <option value="CS">Passport</option>
+                          <option value="CE">Driving Licence</option>
+                          <option value="EE">Voter ID</option>
+                          <option value="EL">College ID</option>
+                          <option value="ME">VIP ID</option>
+                          <option value="MCA">Others</option>
+                        </select>
+
+                        <div class="form-group">
+                          <label for="email">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="contact">Contact No:-</label>
+                          <input type="number" class="form-control" id="contact" placeholder="contact">
+                        </div>
+
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button> <br> <br>
+                        <button type="clear" class="btn btn-primary">Reset</button>
+                      </div>
+                      </form>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-xs-3">
+              <div class="img-thumbnail">
+                <img src="images/13.jpg" style="width: 100%;height:250px;" alt="image not found">
+                <div class="caption">
+                  <center><h3>Single Room</h3></center>
+                  <p>The Taj Hotels Resort and Palaces comprises 100 hotels in 62 locations</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Book Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+              <div class="img-thumbnail">
+                <img src="images/14.jpg" style="width: 100%;height:250px;" alt="image not found">
+                <div class="caption">
+                  <center><h3>Double Room</h3></center>
+                  <p>The Taj Hotels Resort and Palaces comprises 100 hotels in 62 locations</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Book Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+              <div class="img-thumbnail">
+                <img src="images/15.jpg" style="width: 100%; height:250px;" alt="image not found">
+                <div class="caption">
+                  <center><h3>Family Room</h3></center>
+                  <p>The Taj Hotels Resort and Palaces comprises 100 hotels in 62 locations</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Book Now</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-3">
+              <div class="img-thumbnail">
+                <img src="images/16.jpg" style="width: 100%;height:250px;" alt="image not found">
+                <div class="caption">
+                  <center><h3>Twin Room</h3></center>
+                  <p>The Taj Hotels Resort and Palaces comprises 100 hotels in 62 locations</p>
+                  <p><a href="#" class="btn btn-primary" role="button">Book Now</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+<footer>
+  <div class="foot_front">
+    Partner With Us&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Corporates&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Holidays Packages&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;Travel Agent
+  </div>
+  <div class="foot_mid">
+    <div class="row">
+      <div class="col-sm-4 col-xs-4">
+        <h3>INDIAN HOTELS COMPANY</h3>
+        <p>ABOUT IHC</p>
+        <p>INVESTORS</p>
+        <p>HOTEL DEVELOPERS</p>
+        <p>HOTEL SERVICES</p>
+      </div>
+      <div class="col-sm-4 col-xs-4">
+        <h3>OUR BRANDS</h3>
+        <p>TAJ</p>
+        <p>THE GATEWAY</p>
+        <p>OUR GUEST</p>
+
+      </div>
+      <div class="col-sm-4 col-xs-4">
+        <h3>CONTACT DETAILS</h3>
+        <p>CAREERS</p>
+        <p>PRIVACY POLICY</p>
+        <p>RECPTIONS</p>
+        <p>TERMS OF USE</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot_center">
+    <h3>OTHERS BRANCHES</h3>
+    Shri Nagar | Shimal | Chanighad | New Delhi | Jaipur | Noida | Lucknow | Varanasi | Patna | Kalkata | Guwahati | Bhopal | Ahamdabad | Mumbai | Nagpur | Hydarabad | Banglore | Chennai
+  </div>
+  <div class="foot_bottom">
+  <div class="row">
+    <div class="col-sm-4 col-xs-4"><br>
+      <a href="https://www.facebook.com"> <img class="logo" src="images/facebook.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://twitter.com"> <img class="logo" src="images/twitter.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.linkedin.com"> <img class="logo" src="images/linkedin.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.pinterest.com"> <img class="logo" src="images/pinterest.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://plus.google.com"> <img class="logo" src="images/google-plus.png"><a>&nbsp;&nbsp;&nbsp;&nbsp;</a></a>
+      <a href="https://www.instagram.com"> <img class="logo" src="images/instagram.png"></a>
+    </div>
+
+  <div class="col-sm-4 col-xs-4">
+    <h3>LORMEH</h3>
+    <p>Hotel</p>
+
+  </div>
+  <div class="col-sm-4 col-xs-4">
+    <br>
+    <p>All copy Resversed &copy;2018;</p>
+  </div>
+  </div>
+  </div>
+
+</footer>
+
+<!--End of Popupbox SignUP-->
+    </body>
+</html>
