@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<div class="box">
+  <h5 class="card-header">Upload Product</h5>
+  <div class="container">
+    <form class="form-group" enctype="multipart/form-data"  method="post">
+
+      {% csrf_token %}
+
+      {{form.product_name.errors}}
+      <label for="{{form.product_name.id_for_label}}">Product Name:</label>
+      {{form.product_name}}
+
+      {{form.price.errors}}
+      <label for="{{form.price.id_for_label}}">Price:</label>
+      {{form.price}}
+
+
+      {{form.description.errors}}
+      <label for="{{form.description.id_for_label}}">Description:</label>
+      {{form.description}}
+
+      {{form.discount.errors}}
+      <label for="{{form.discount.id_for_label}}">Discount:</label>
+      {{form.discount}}
+
+      {{form.product_category.errors}}
+      <label for="{{form.product_category.id_for_label}}">Product Category:</label>
+      {{form.product_category}}
+
+      {{form.image.errors}}
+      <label for="{{form.image.id_for_label}}">Image:</label>
+      {{form.image}}
+      <br><br>
+
+      <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+
+</div>
+<div class="card-footer text-muted">
+  &copy;Anand Gautam
+</div>
+</div>
+{% endblock %}
