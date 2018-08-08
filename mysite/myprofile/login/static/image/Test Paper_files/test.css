@@ -1,0 +1,53 @@
+header{
+  text-align: center;
+  border-bottom: #fff dashed 1px;
+}
+
+header h1{
+  margin: auto;
+  padding: auto;
+}
+
+section{
+  min-height: 400px;
+}
+
+.question{
+  background: gray;
+  color: white;
+}
+
+.answer{
+  background: gray;
+  color: white;
+}
+.answer:hover{
+  background: blue;
+  color: white;
+}
+.btn{
+  background-color: green;
+  cursor: pointer;
+
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+
+#result{
+  background: #f06226;
+  margin: 10px 0;
+  padding: 10px;
+  width: 50rem;
+}
+
+#result span{
+  color: #fff;
+  font-weight: bold;
+}
+
+footer{
+  text-align: center;
+}
